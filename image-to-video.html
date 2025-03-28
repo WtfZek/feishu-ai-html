@@ -14,6 +14,7 @@
 <div class="page-wrapper" data-header-position="fixed" data-layout="vertical" data-navbarbg="skin6" data-sidebar-position="fixed"
      data-sidebartype="full" id="main-wrapper">
 
+
     <!-- 侧边栏开始 -->
     <aside class="left-sidebar">
         <div>
@@ -221,13 +222,73 @@
         </header>
         <!-- 头部结束 -->
         <div class="container-fluid">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title fw-semibold mb-4">示例页面</h5>
-                    <p class="mb-0">这是一个示例页面</p>
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold mb-4">表单</h5>
+                        <div class="card">
+                            <div class="card-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleInputEmail1">邮箱地址</label>
+                                        <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail1"
+                                               type="email">
+                                        <div class="form-text" id="emailHelp">我们不会与他人共享您的邮箱地址。</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleInputPassword1">密码</label>
+                                        <input class="form-control" id="exampleInputPassword1" type="password">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input class="form-check-input" id="exampleCheck1" type="checkbox">
+                                        <label class="form-check-label" for="exampleCheck1">选中我</label>
+                                    </div>
+                                    <button class="btn btn-primary" type="submit">提交</button>
+                                </form>
+                            </div>
+                        </div>
+                        <h5 class="card-title fw-semibold mb-4">禁用表单</h5>
+                        <div class="card mb-0">
+                            <div class="card-body">
+                                <form>
+                                    <fieldset disabled>
+                                        <legend>禁用字段集示例</legend>
+                                        <div class="mb-3">
+                                            <label class="form-label" for="disabledTextInput">禁用输入框</label>
+                                            <input class="form-control" id="disabledTextInput" placeholder="禁用输入框"
+                                                   type="text">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label" for="disabledSelect">禁用选择菜单</label>
+                                            <select class="form-select" id="disabledSelect">
+                                                <option>禁用选择</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" disabled
+                                                       id="disabledFieldsetCheck" type="checkbox">
+                                                <label class="form-check-label" for="disabledFieldsetCheck">
+                                                    无法勾选
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary" type="submit">提交</button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/sidebarmenu.js"></script>
+<script src="assets/js/app.min.js"></script>
+<script src="assets/libs/simplebar/dist/simplebar.js"></script>
+</body>
+
+</html>
