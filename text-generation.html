@@ -227,7 +227,7 @@
                         <span class="hide-menu">认证</span>
                     </li>
                     <li class="sidebar-item">
-                        <a aria-expanded="false" class="sidebar-link" href="./authentication.html">
+                        <a aria-expanded="false" class="sidebar-link" href="./authentication.html" onclick="logout()">
                             <span>
                                 <i class="ti ti-login"></i>
                             </span>
@@ -463,6 +463,12 @@
         } catch (error) {
             console.error('加载模型出错：', error);
         }
+    }
+
+    // 验证
+    function logout() {
+        apiKey = 'isLogout';
+        localStorage.setItem('apiKey', apiKey);
     }
 </script>
 </body>
