@@ -9,6 +9,37 @@
   <link rel="stylesheet" href="assets/css/styles.min.css" />
 </head>
 
+<style>
+  /* Loading Overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .overlay .loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+
+  /* Center text generation output */
+  #textGenOutput {
+    text-align: center;
+    margin-top: 10px;
+  }
+</style>
+
 <body>
   <!-- 页面包装 -->
   <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
@@ -17,6 +48,9 @@
       class="position-relative overflow-hidden radial-gradient min-vh-100 d-flex align-items-center justify-content-center">
       <div class="d-flex align-items-center justify-content-center w-100">
         <div class="row justify-content-center w-100">
+          <div id="overlay" class="overlay">
+            <div class="loader"></div>
+          </div>
           <div class="col-md-8 col-lg-6 col-xxl-3">
             <div class="card mb-0">
               <div class="card-body">
@@ -26,7 +60,7 @@
                 <p class="text-center">请输入秘钥</p>
                 <form>
                   <div class="mb-4">
-                    <label for="exampleInputPassword1" class="form-label">秘钥</label>
+                    <label class="form-label">秘钥</label>
                     <input type="password" class="form-control" id="apiKeyInput" placeholder="请输入您的密钥">
                   </div>
                   <a href="./index.html" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2" onclick="authenticate()">验证</a>
@@ -42,6 +76,21 @@
       </div>
     </div>
   </div>
+  <script>
+    const API_ENDPOINT = 'https://youn1ipym2oaxxiasnow.deepln.com/suansuan'; // 替换为您的 API 端点
+    let apiKey = localStorage.getItem('apiKey') || '';
+
+    // 验证
+    function authenticate() {
+      apiKey = document.getElementById('apiKeyInput').value;
+      localStorage.setItem('apiKey', apiKey);
+    }
+
+    if (apiKey) {
+
+    }
+
+  </script>
   <script src="assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

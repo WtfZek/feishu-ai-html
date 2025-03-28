@@ -25,7 +25,7 @@
     }
 
     h1, h2 {
-        color: #007bff;
+        color: #5D87FF;
         text-align: center;
     }
 
@@ -53,7 +53,7 @@
     }
 
     button {
-        background-color: #007bff;
+        background-color: #5D87FF;
         color: white;
         padding: 12px 20px;
         border: none;
@@ -64,7 +64,7 @@
     }
 
     button:hover {
-        background-color: #0056b3;
+        background-color: #4f73d9;
     }
 
     #textGenOutput {
@@ -81,7 +81,7 @@
 
     .loader {
         border: 5px solid #f3f3f3;
-        border-top: 5px solid #3498db;
+        border-top: 5px solid #5D87FF;
         border-radius: 50%;
         width: 50px;
         height: 50px;
@@ -119,9 +119,9 @@
   <!-- 页面包裹 -->
   <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
     data-sidebar-position="fixed" data-header-position="fixed">
-<!-- 侧边栏开始 -->
+
+    <!-- 侧边栏开始 -->
     <aside class="left-sidebar">
-      <!-- 侧边栏滚动-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
           <a href="./index.html" class="text-nowrap logo-img">
@@ -131,118 +131,117 @@
             <i class="ti ti-x fs-8"></i>
           </div>
         </div>
-        <!-- 侧边栏导航-->
         <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
           <ul id="sidebarnav">
             <li class="nav-small-cap">
-              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <i class="ti ti-home nav-small-cap-icon fs-4"></i>
               <span class="hide-menu">首页</span>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./index.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-layout-dashboard"></i>
-                </span>
+            <span>
+              <i class="ti ti-dashboard"></i>
+            </span>
                 <span class="hide-menu">仪表盘</span>
               </a>
             </li>
             <li class="nav-small-cap">
-              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <i class="ti ti-brain nav-small-cap-icon fs-4"></i>
               <span class="hide-menu">AI 功能</span>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-article"></i>
-                </span>
+            <span>
+              <i class="ti ti-text-size"></i>
+            </span>
                 <span class="hide-menu">文本生成</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-alert-circle"></i>
-                </span>
+            <span>
+              <i class="ti ti-photo"></i>
+            </span>
                 <span class="hide-menu">图像生成</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-cards"></i>
-                </span>
+            <span>
+              <i class="ti ti-video"></i>
+            </span>
                 <span class="hide-menu">文本转视频</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-file-description"></i>
-                </span>
+            <span>
+              <i class="ti ti-file"></i>
+            </span>
                 <span class="hide-menu">图像转视频</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-typography"></i>
-                </span>
+            <span>
+              <i class="ti ti-microphone"></i>
+            </span>
                 <span class="hide-menu">声音复刻</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-typography"></i>
-                </span>
+            <span>
+              <i class="ti ti-speakerphone"></i>
+            </span>
                 <span class="hide-menu">语音生成</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-typography"></i>
-                </span>
+            <span>
+              <i class="ti ti-history"></i>
+            </span>
                 <span class="hide-menu">任务历史</span>
               </a>
             </li>
             <li class="nav-small-cap">
-              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <i class="ti ti-lock nav-small-cap-icon fs-4"></i>
               <span class="hide-menu">认证</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./authentication-login.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-login"></i>
-                </span>
-                <span class="hide-menu">登录</span>
+              <a class="sidebar-link" href="./authentication-register.html" aria-expanded="false">
+            <span>
+              <i class="ti ti-login"></i>
+            </span>
+                <span class="hide-menu">登出秘钥</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./authentication-register.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-user-plus"></i>
-                </span>
-                <span class="hide-menu">api 秘钥</span>
+            <span>
+              <i class="ti ti-key"></i>
+            </span>
+                <span class="hide-menu">切换秘钥</span>
               </a>
             </li>
             <li class="nav-small-cap">
-              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <i class="ti ti-settings nav-small-cap-icon fs-4"></i>
               <span class="hide-menu">额外</span>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-mood-happy"></i>
-                </span>
+            <span>
+              <i class="ti ti-icons"></i>
+            </span>
                 <span class="hide-menu">图标</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-aperture"></i>
-                </span>
+            <span>
+              <i class="ti ti-file-code"></i>
+            </span>
                 <span class="hide-menu">示例页面</span>
               </a>
             </li>
@@ -259,9 +258,7 @@
             </div>
           </div>
         </nav>
-        <!-- 结束侧边栏导航 -->
       </div>
-      <!-- 结束侧边栏滚动-->
     </aside>
     <!-- 侧边栏结束 -->
 
@@ -400,6 +397,8 @@
       } catch (error) {
         console.error('API 请求失败：', error);
         alert('API 请求失败：' + error.message);
+        // 点击确定后跳转到错误页面，比如 error.html
+        window.location.href = 'authentication-register.html';
         throw error;
       } finally {
         overlay.style.display = 'none'; // 隐藏加载中提示
